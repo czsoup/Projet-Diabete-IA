@@ -32,7 +32,7 @@ Une interface interactive permettant de tester le modèle en temps réel est dis
 │   └── pipeline.py    <- Script unique d'exécution (End-to-End)
 ├── requirements.txt   <- Liste des dépendances Python
 └── README.md          <- Documentation du projet
-
+```
 ##  Installation et Exécution (Partie Data)
 
 ## Prérequis
