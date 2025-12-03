@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.js": "/Projet-Diabete-IA/static/js/main.ad4e4de6.js",
+    "main.js": "/Projet-Diabete-IA/static/js/main.321de4bc.js",
+    "static/media/09_errors_analysis.png": "/Projet-Diabete-IA/static/media/09_errors_analysis.64cba0a1a4b74b2a4058.png",
     "index.html": "/Projet-Diabete-IA/index.html",
-    "main.ad4e4de6.js.map": "/Projet-Diabete-IA/static/js/main.ad4e4de6.js.map"
+    "main.321de4bc.js.map": "/Projet-Diabete-IA/static/js/main.321de4bc.js.map"
   },
   "entrypoints": [
-    "static/js/main.ad4e4de6.js"
+    "static/js/main.321de4bc.js"
   ]
 }
