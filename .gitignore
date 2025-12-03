@@ -1,0 +1,19 @@
+.DS_Store
+Thumbs.db
+
+__pycache__/
+*.pyc
+.vscode/
+venv/
+env/
+
+src/pipeline_old.py
+
+dnode_modules/
+build/
+dist/
+.env
+diabetes_fast_20251130_152040/
+
+# Si fichier CSV est > 100Mo
+# data/raw/*.csv
