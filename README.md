@@ -14,10 +14,10 @@ Ce projet vise à développer une solution complète de **Machine Learning** pou
 L'objectif est de fournir un outil d'aide à la décision capable d'estimer le risque de diabète à partir d'indicateurs cliniques et comportementaux (IMC, tension, cholestérol, etc.).
 
 ### Accès au Dashboard
-Une interface interactive permettant de tester le modèle en temps réel est disponible ici :
- **[DÉMO EN LIGNE : Diabetes Prediction Dashboard](https://czsoup.github.io/diabete-dashboard-react/)**
+Une interface interactive permettant de tester le modèle en temps réel est disponible. Cette application web contient **un module de prédiction** où vous pouvez saisir vos propres données de santé (IMC, âge, taux de cholestérol, etc.). Le modèle analysera ces informations en temps réel pour prédire si le profil présente un risque de diabète.
 
-Cette application web contient **un module de prédiction** où vous pouvez saisir vos propres données de santé (IMC, âge, taux de cholestérol, etc.). Le modèle analysera ces informations en temps réel pour prédire si le profil présente un risque de diabète.
+ **[DÉMO EN LIGNE : Diabetes Prediction Dashboard](https://czsoup.github.io/Projet-Diabete-IA/)**
+
 ---
 
 ##  Architecture du Projet
