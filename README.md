@@ -30,7 +30,15 @@ Une interface interactive permettant de tester le modèle en temps réel est dis
 ├── reports            
 │   └── figures        <- Visualisations générées (Matrices de confusion, ROC, etc.)
 ├── src                <- Cœur du projet (Pipeline ETL & ML)
-│   └── pipeline.py    <- Script unique d'exécution (End-to-End)
+│   └── pipeline_run.py    <- Script unique d'exécution (End-to-End)
+│   └── config.py
+│   └── dataset.py   
+│   └── features.py
+│   └── plots.py
+│   └── __init__.py
+│   └── modeling
+│           └── predict.py
+│           └── train.py
 ├── requirements.txt   <- Liste des dépendances Python
 └── README.md          <- Documentation du projet
 ```
@@ -40,13 +48,21 @@ Une interface interactive permettant de tester le modèle en temps réel est dis
 
 git clone [https://github.com/czsoup/Projet-Diabete-IA.git](https://github.com/czsoup/Projet-Diabete-IA.git)
 
-cd Projet-Diabete-IA
+### Lancer le Pipeline ML windows
 
+py -m venv venv
+
+powershell en administrateur : Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+
+ .\venv\Scripts\activate
 pip install -r requirements.txt
 
-### Lancer le Pipeline ML
-Le script principal automatise l'intégralité du processus : chargement des données, prétraitement, entraînement, évaluation et sauvegarde des artefacts.
-python src/pipeline.py
+python -m src.pipeline_run
+
+
+
+
+
 
 
 ## Méthodologie Data Science
