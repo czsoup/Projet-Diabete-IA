@@ -17,7 +17,7 @@ from datetime import datetime
 import json
 import os
 import sys
-from pathlib import Path  # <--- INDISPENSABLE POUR LA STRUCTURE
+from pathlib import Path  
 
 warnings.filterwarnings("ignore")
 sns.set(style="whitegrid")
@@ -276,7 +276,6 @@ plt.tight_layout()
 plt.savefig(FIGURES_DIR / '04_threshold_optimization.png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# Prédiction finale avec le meilleur seuil
 y_pred = (y_pred_proba >= best_threshold).astype(int)
 
 # -------------------------------
@@ -291,7 +290,7 @@ f1 = f1_score(y_test, y_pred)
 auc = roc_auc_score(y_test, y_pred_proba)
 mcc = matthews_corrcoef(y_test, y_pred)
 
-print(f"\n📊 MÉTRIQUES GLOBALES")
+print(f"\n MÉTRIQUES GLOBALES")
 print(f"  Accuracy : {accuracy:.4f}")
 print(f"  F1-Score : {f1:.4f}")
 print(f"  AUC-ROC : {auc:.4f}")
@@ -304,7 +303,7 @@ print("\n" + classification_report(y_test, y_pred,
 cm = confusion_matrix(y_test, y_pred)
 tn, fp, fn, tp = cm.ravel()
 
-print(f"\n📋 MATRICE DE CONFUSION")
+print(f"\n MATRICE DE CONFUSION")
 print(f"  Vrais Négatifs (TN) : {tn:,}")
 print(f"  Faux Positifs (FP) : {fp:,}")
 print(f"  Faux Négatifs (FN) : {fn:,}")
@@ -511,7 +510,7 @@ metrics_df.to_csv(MODELS_DIR / 'threshold_metrics.csv', index=False)
 print(f"✓ Métriques par seuil sauvegardées : {MODELS_DIR}/threshold_metrics.csv")
 
 print("\n" + "="*70)
-print("✅ ANALYSE TERMINÉE AVEC SUCCÈS")
+print(" ANALYSE TERMINÉE AVEC SUCCÈS")
 print("="*70)
 print(f"\n📁 Tous les résultats sont dans :")
 print(f"  • Modèles : {MODELS_DIR}")
